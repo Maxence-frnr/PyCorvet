@@ -2,7 +2,7 @@ import random
 
 pos = []
 nombre_de_caracter = 32
-nombre_de_points = 4096
+nombre_de_points = 1024
 for i in range(nombre_de_points):
     x = random.randint(0, nombre_de_caracter*5)
     y = random.randint(0, nombre_de_caracter*4)
@@ -96,11 +96,7 @@ def convert(matrix):
     C = regroup_by_caracter(B)
     #print('\nmatrice regroupe par caracter',x)
     D = create_all_caracter(C)
-    # for i in range(len(x)):
-    #     print(i)
-    #     print_caracter(x[i])
-    print(D[15])
-    E = list_to_hexadecimal(D[15])
+
     all_hexa = []
     for i in range(nombre_de_caracter):
         all_hexa.append(list_to_hexadecimal(D[i]))
